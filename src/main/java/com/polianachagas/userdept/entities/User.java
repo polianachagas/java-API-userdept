@@ -1,6 +1,4 @@
-package com.polianachagas.userdept;
-
-import com.polianachagas.userdept.entities.Department;
+package com.polianachagas.userdept.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,7 +23,6 @@ public class User {
 	private Department department;
 	
 	public User() {
-		
 	}
 
 	public Long getId() {
@@ -59,6 +56,4 @@ public class User {
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
-	
-	
 }

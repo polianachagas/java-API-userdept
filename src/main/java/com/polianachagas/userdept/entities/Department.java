@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_deparment")
+@Table(name = "tb_department")
 public class Department {
 
 	@Id
@@ -16,13 +16,6 @@ public class Department {
 	private String name;
 	
 	public Department() {
-		
-	}
-
-	public Department(Long id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
 	}
 
 	public Long getId() {
@@ -39,5 +32,5 @@ public class Department {
 
 	public void setName(String name) {
 		this.name = name;
-	}	
+	}
 }
